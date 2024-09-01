@@ -1,0 +1,34 @@
+body {
+  background-color: darkgray;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  /* Set a width for the navbar */
+  height: 100%;
+  /* Make the navbar span the full height of the viewport */
+  background-color: #f4f4f4;
+  /* Optional: background color */
+  overflow-y: auto;
+  /* Enable scrolling if the content overflows */
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .main-section {
+    padding: 15px;
+  }
+}
